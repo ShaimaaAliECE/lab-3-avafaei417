@@ -24,6 +24,7 @@ namespace Lab3App
             if (Board != null)
             {
                 ((CollectionBoard)Board).UpdateTotalScore(Score);
+                Console.WriteLine($"{GetType().Name} {Description} Collected, Congrats!!!!");
             }
         }
     }

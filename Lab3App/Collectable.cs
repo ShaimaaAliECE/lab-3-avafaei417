@@ -19,12 +19,10 @@ namespace Lab3App
             if (collectables.Contains(this))
             {
                 collectables.Remove(this);
-                Console.WriteLine($"{GetType().Name} {Description} is removed");
             }
             else
             {
                 collectables.Add(this);
-                Console.WriteLine($"{GetType().Name} {Description} is added");
             }
         }
 

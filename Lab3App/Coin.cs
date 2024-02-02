@@ -15,12 +15,13 @@ namespace Lab3App
             Console.WriteLine($"{GetType().Name} {Description} is displayed");
         }
 
-        // Use consistent method name with the base class
-        public override void UpdateTotalScore()
+        
+        public virtual void UpdateTotalValue()
         {
             if (Board != null)
             {
                 ((CollectionBoard)Board).UpdateTotalValue(Value);
+                Console.WriteLine($"Total Value is updated to: {Value}");
             }
         }
     }

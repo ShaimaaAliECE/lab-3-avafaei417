@@ -11,7 +11,7 @@ namespace Lab3App
 
         public virtual void DoAction()
         {
-            Console.WriteLine($"{GetType().Name} is used");
+            Console.WriteLine($"{GetType().Name} {Description} is used");
         }
 
         public override void AddMe(List<Collectable> collectables)
